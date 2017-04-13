@@ -28,7 +28,7 @@ function inserePropriedade(template, propName, propValue) {
 
 // constroi a pagina, com os dados recebidos por parametro
 function constroiPagina(dados) {
-  $ajaxUtils.sendGetRequest(itensHtml, geraPaginaPrincipal, false); // não é um JSON
+  $ajax-Utils.sendGetRequest(itensHtml, geraPaginaPrincipal, false); // não é um JSON
 }
 
 function geraPaginaPrincipal(itensHtml) {
@@ -55,4 +55,4 @@ function geraPaginaPrincipal(itensHtml) {
 // vamos construir o sendGetRequest:
 // definir a URL (dataUrl)
 // e o metodo constroiPagina
-$ajaxUtils.sendGetRequest(dataUrl, constroiPagina);
+$ajax-Utils.sendGetRequest(dataUrl, constroiPagina);
