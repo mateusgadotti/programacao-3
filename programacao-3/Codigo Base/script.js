@@ -3,8 +3,8 @@
 // especialmente a função geraPaginaPrincipal, conforme
 // seu template HTML.
 
-var dataUrl = "Codigo%20Base/dados/menu.json",
-    itensHtml = "../item-snippet.html";
+var dataUrl = "menu.json",
+    itensHtml = "item-snippet.html";
     
 // função facilitadora para inserir HTML em um elemento
 function insereHtml(seletor, html) {
@@ -28,7 +28,7 @@ function inserePropriedade(template, propName, propValue) {
 
 // constroi a pagina, com os dados recebidos por parametro
 function constroiPagina(dados) {
-  $ajax-Utils.sendGetRequest(itensHtml, geraPaginaPrincipal, false); // não é um JSON
+  $ajaxUtils.sendGetRequest(itensHtml, geraPaginaPrincipal, false); // não é um JSON
 }
 
 function geraPaginaPrincipal(itensHtml) {
@@ -55,4 +55,4 @@ function geraPaginaPrincipal(itensHtml) {
 // vamos construir o sendGetRequest:
 // definir a URL (dataUrl)
 // e o metodo constroiPagina
-$ajax-Utils.sendGetRequest(dataUrl, constroiPagina);
+$ajaxUtils.sendGetRequest(dataUrl, constroiPagina);
