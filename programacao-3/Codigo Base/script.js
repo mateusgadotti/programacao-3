@@ -1,4 +1,4 @@
-var dataUrl = "data.json",
+var dataUrl = "menu.json",
     itensHtml = "item-snippet.html";
     
 // função facilitadora para inserir HTML em um elemento
